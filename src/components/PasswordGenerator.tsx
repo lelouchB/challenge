@@ -104,7 +104,7 @@ const PasswordGenerator: React.FC = () => {
             onChange={(e) =>
               handleOptionChange("length", parseInt(e.target.value))
             }
-            className="w-full h-3 outline-none accent-orange-400 text-orange-400"
+            className="range-input"
           />
         </div>
 

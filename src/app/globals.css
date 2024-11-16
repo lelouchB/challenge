@@ -20,13 +20,44 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.slider {
-  @apply
-  [&::-webkit-slider-runnable-track]:rounded-full 
-  [&::-webkit-slider-runnable-track]:bg-black/25 
-  [&::-webkit-slider-thumb]:appearance-none 
-  [&::-webkit-slider-thumb]:h-5 
-  [&::-webkit-slider-thumb]:w-5 
-  [&::-webkit-slider-thumb]:rounded-full 
-  [&::-webkit-slider-thumb]:bg-orange-500;
+.range-input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.range-input::-webkit-slider-runnable-track {
+  height: 15px;
+  background: #e2e8f0;
+  border-radius: 16px;
+}
+
+.range-input::-moz-range-track {
+  height: 15px;
+  background: #e2e8f0;
+  border-radius: 16px;
+}
+
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #f97316;
+  box-shadow: -407px 0 0 400px #f97316;
+}
+
+.range-input::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #f97316;
+  box-shadow: -407px 0 0 400px #f97316;
 }
