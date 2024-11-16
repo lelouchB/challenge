@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider {
+  @apply
+  [&::-webkit-slider-runnable-track]:rounded-full 
+  [&::-webkit-slider-runnable-track]:bg-black/25 
+  [&::-webkit-slider-thumb]:appearance-none 
+  [&::-webkit-slider-thumb]:h-5 
+  [&::-webkit-slider-thumb]:w-5 
+  [&::-webkit-slider-thumb]:rounded-full 
+  [&::-webkit-slider-thumb]:bg-orange-500;
+}
